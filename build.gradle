@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.github.philippheuer"
-description = "This is a template project for java library projects."
+description = "Common camunda services"
 version = System.getenv('CI_COMMIT_REF_NAME')
 
 sourceCompatibility = 1.8
@@ -17,7 +17,16 @@ repositories {
 }
 
 dependencies {
-    // your dependencies
+    // Camunda
+    compileOnly group: 'org.camunda.bpm', name: 'camunda-engine', version: '7.9.0'
+    compileOnly group: 'org.camunda.bpm', name: 'camunda-engine-spring', version: '7.9.0'
+
+    // Log
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+
+    // Lombok
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.2'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.2'
 }
 
 /**

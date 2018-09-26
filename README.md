@@ -1,10 +1,6 @@
-# Java - Library Template
+# Camunda - Services
 
-## Features:
-
-- Publish to jCenter
-- JavaDocs
-- GitLab CI for automated deployments of tags
+Common services to use when developing camunda services.
 
 ## License
 
